@@ -1,0 +1,2 @@
+cat lkdjf | dkf || cat || coucou
+echo $?

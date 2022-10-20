@@ -1,0 +1,2 @@
+ls -z && (ls) && (pwd)
+echo $?

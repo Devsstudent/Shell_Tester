@@ -1,0 +1,2 @@
+cd minishell Docs crashtest.c
+echo $?

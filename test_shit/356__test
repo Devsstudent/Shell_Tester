@@ -1,0 +1,2 @@
+exit | ls
+echo $?

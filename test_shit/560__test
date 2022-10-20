@@ -1,0 +1,2 @@
+rm srcs/bonjour srcs/hello
+echo $?

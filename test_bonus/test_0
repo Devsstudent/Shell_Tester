@@ -1,0 +1,2 @@
+ech|o hola | cat
+echo $?

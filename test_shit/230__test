@@ -1,0 +1,2 @@
+cd ../minishell/home/vietdu91/42_works/minishell
+echo $?

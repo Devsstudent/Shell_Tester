@@ -1,0 +1,2 @@
+$DONTEXISTCas d'un variable inexistant
+echo $?

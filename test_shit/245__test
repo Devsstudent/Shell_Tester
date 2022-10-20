@@ -1,0 +1,2 @@
+cd $HOME/home/vietdu91
+echo $?

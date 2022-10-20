@@ -1,0 +1,2 @@
+echo coucou | (kjdfj || cat)
+echo $?

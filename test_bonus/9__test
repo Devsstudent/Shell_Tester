@@ -1,0 +1,2 @@
+(Ahahah || echo aa) | (cat && cat)
+echo $?

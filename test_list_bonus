@@ -1,0 +1,12 @@
+(echo aa && echo bb) | cat -e
+echo coucou | (cat && cat)
+echo coucou | (ahaha || cat)
+echo coucou | (cat || ahahah)
+(echo aa || ahahah) | cat -e
+(Ahahah || echo coucou) | cat -e
+(echo aa && echo bb) | (ahah || cat -e ) | cat
+(echoooooooo || echo toto) | (ahahah | | cat -e)
+(echoooooooo || echo toto) | (cat -e || ahahah)
+(Ahahah || echo aa) | (cat && cat)
+(Ahahah || echo aa) | (cat && cat && cat&& cat && cat && ls && cat -e)
+(Ahahah || echo aa) | (cat && cat && cat&& cat && cat && ls && grep aa)

@@ -1,0 +1,1 @@
+((echo aa) && echo bb) | cat -e && echo $?

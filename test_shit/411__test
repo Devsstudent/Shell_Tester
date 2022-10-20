@@ -1,0 +1,2 @@
+(ls -z || pwd && ls)
+echo $?

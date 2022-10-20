@@ -1,0 +1,2 @@
+>../bonjour >../hello <prout
+echo $?

@@ -1,0 +1,2 @@
+export BYE=casse-toi
+echo $?

@@ -1,0 +1,2 @@
+echo bonjour && echo hola
+echo $?

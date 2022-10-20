@@ -1,0 +1,2 @@
+(echo aa || ahahah) | cat -e
+echo $?

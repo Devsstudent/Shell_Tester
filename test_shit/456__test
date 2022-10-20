@@ -1,0 +1,2 @@
+echo hola >> hello >> hello >> hello
+echo $?

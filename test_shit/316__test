@@ -1,0 +1,2 @@
+exit hola 666
+echo $?

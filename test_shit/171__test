@@ -1,0 +1,2 @@
+unset HOLA HOL?A
+echo $?

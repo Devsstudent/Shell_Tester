@@ -1,0 +1,2 @@
+echo hola >srcs/bonjour
+echo $?

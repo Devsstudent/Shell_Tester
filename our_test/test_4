@@ -1,0 +1,1 @@
+(cat | ls) | cat && echo $? | cat && ls * && echo $?

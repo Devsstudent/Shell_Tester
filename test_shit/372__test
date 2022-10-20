@@ -1,0 +1,2 @@
+ifconfig | grep hola
+echo $?

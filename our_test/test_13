@@ -1,0 +1,2 @@
+exit | sleep 3
+echo $?

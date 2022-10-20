@@ -1,0 +1,1 @@
+(echo 12 -n | (ls && cat | yes | head) || echo lol) && echo $?

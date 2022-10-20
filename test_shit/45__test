@@ -1,0 +1,2 @@
+export | grep ""HOME"""
+echo $?

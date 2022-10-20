@@ -1,0 +1,2 @@
+env | grep PWD
+echo $?

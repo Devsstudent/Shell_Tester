@@ -1,0 +1,2 @@
+cat Make*file
+echo $?

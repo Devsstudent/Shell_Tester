@@ -1,0 +1,2 @@
+pwd | echo hola
+echo $?

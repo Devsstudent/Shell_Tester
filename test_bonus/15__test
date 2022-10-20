@@ -1,0 +1,2 @@
+(echo aa) | (asdasd || cat)
+echo $?

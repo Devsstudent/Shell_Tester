@@ -1,0 +1,1 @@
+((echo aa < ok) | ls) && pwd

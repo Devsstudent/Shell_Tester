@@ -1,0 +1,2 @@
+export HOL@=bonjour
+echo $?

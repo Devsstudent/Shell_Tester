@@ -1,0 +1,2 @@
+(echo coucou) | (asds || cat)
+echo $?
