@@ -11,6 +11,7 @@
 	- cmd tested
 	- bash_output
 	- our_output
+- If you want the diff to be displayed directly during the running time of the test : uncomment line 50 in the script
 
 We provide some test, but you can create your own test, following the way the tester is working !
 Don't hesitate to make your own tester, modify this one, understand it etc !

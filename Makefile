@@ -13,4 +13,4 @@ clean:
 	rm -rf bash_output
 	rm -rf expected_output
 	rm -rf test_output
-	rm -rf cat a hola pwd srcs/bonjour srcs/hello
+	rm -rf cat a hola pwd srcs/bonjour srcs/hello '$HOLA' hola1 hola2 inoutfile ls1 hey HOLA
