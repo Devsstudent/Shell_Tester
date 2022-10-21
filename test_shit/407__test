@@ -1,2 +1,0 @@
-(ls -z || pwd | wc) < hola
-echo $?

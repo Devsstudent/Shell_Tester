@@ -1,0 +1,2 @@
+echo $?
+whoami | grep $USER > /tmp/bonjour

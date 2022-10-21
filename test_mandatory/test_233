@@ -1,0 +1,2 @@
+echo $?
+export TE+S=T

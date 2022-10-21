@@ -1,2 +1,0 @@
-echo bonjour > hola1
-echo $?

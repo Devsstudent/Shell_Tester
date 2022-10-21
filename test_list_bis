@@ -112,27 +112,16 @@ export _HO_LA_=bonjour
 echo $?
 export HOL@=bonjour
 echo $?
-export HOL\~A=bonjour
-echo $?
-export -HOLA=bonjour
-echo $?
-export --HOLA=bonjour
-echo $?
 export HOLA-=bonjour
 echo $?
 export HO-LA=bonjour
 echo $?
 export HOL.A=bonjour
 echo $?
-export HOL\\\$A=bonjour
-echo $?
-export HO\\\\LA=bonjour
-echo $?
 export HOL}A=bonjour
 echo $?
 export HOL{A=bonjour
 echo $?
-export HO*LA=bonjour
 echo $?
 export HO#LA=bonjour
 echo $?
@@ -175,14 +164,6 @@ echo $?
 export HOLA=$HOMEbonjour
 echo $?
 export HOLA=bon$jour
-echo $?
-export HOLA=bon\jour
-echo $?
-export HOLA=bon\\jour
-echo $?
-export HOLA=bon(jour
-echo $?
-export HOLA=bon()jour
 echo $?
 export HOLA=bon&jour
 echo $?
@@ -348,8 +329,6 @@ unset HOL?A HOL.A
 echo $?
 unset HOLA=
 echo $?
-unset HOL\\\\A
-echo $?
 unset HOL;A
 echo $?
 unset HOL.A
@@ -372,7 +351,6 @@ unset HOL_A
 echo $?
 unset HOLA_
 echo $?
-unset HOL*A
 echo $?
 unset HOL#A
 echo $?
@@ -432,14 +410,6 @@ pwd ./hola
 echo $?
 pwd hola que tal
 echo $?
-pwd -p
-echo $?
-pwd --p
-echo $?
-pwd ---p
-echo $?
-pwd -- p
-echo $?
 pwd pwd pwd
 echo $?
 pwd ls
@@ -484,9 +454,7 @@ cd /
 echo $?
 cd _
 echo $?
-cd -
 echo $?
-cd ---
 echo $?
 cd $HOME/home/vietdu91
 echo $?
@@ -514,11 +482,8 @@ cd ~//home/vietdu91
 echo $?
 cd ~/ | echo $?
 echo $?
-cd *
 echo $?
-cd *
 echo $?
-cd *
 echo $?
 mkdir a
 echo $?
@@ -598,19 +563,9 @@ expr 1 + 1
 echo $?
 expr $? + $?
 echo $?
-env -i ./minishell
-echo $?
-usr/bin/env
-echo $?
-env -i ./minishell
-echo $?
 export PWD=""/mnt/nfs/homes/emtran/Desktop/42_minishell""
 echo $?
 export SHLVL=""1""
-echo $?
-env -i ./minishell
-echo $?
-env -i ./minishell
 echo $?
 exit
 echo $?
@@ -628,8 +583,6 @@ exit 666
 echo $?
 exit 666 666
 echo $?
-exit -666 666
-echo $?
 exit hola 666
 echo $?
 exit 666 666 666 666
@@ -640,45 +593,23 @@ exit hola 666 666
 echo $?
 exit 259
 echo $?
-exit -4
-echo $?
-exit -42
-echo $?
-exit -0000042
-echo $?
-exit -259
-echo $?
-exit -666
-echo $?
 exit +666
 echo $?
 exit 0
 echo $?
 exit +0
 echo $?
-exit -0
-echo $?
 exit +42
-echo $?
-exit -69 -96
-echo $?
-exit --666
 echo $?
 exit ++++666
 echo $?
 exit ++++++0
 echo $?
-exit ------0
-echo $?
 exit ""666"""
 echo $?
 exit '666'
 echo $?
-exit '-666'
-echo $?
 exit '+666'
-echo $?
-exit '----666'
 echo $?
 exit '++++666'
 echo $?
@@ -694,15 +625,9 @@ exit '666'""666""666"
 echo $?
 exit +'666'""666""666"
 echo $?
-exit -'666'""666""666"
-echo $?
 exit 9223372036854775807
 echo $?
 exit 9223372036854775808
-echo $?
-exit -9223372036854775808
-echo $?
-exit -9223372036854775809
 echo $?
 cat | cat | cat | ls
 echo $?
@@ -774,11 +699,8 @@ ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls
 echo $?
 echo hola | cat | cat | cat | cat | cat | grep hola
 echo $?
-(ls && pwd) > hola
 echo $?
-> hola ls && pwd
 echo $?
-> hola (ls && pwd)
 echo $?
 (> pwd)
 echo $?
@@ -792,27 +714,17 @@ echo $?
 echo $?
 > pwd (ls)
 echo $?
-(ls||pwd)&&(ls||pwd)
 echo $?
-(lss||pwd)&&(lss||pwd)
 echo $?
-(lss&&pwd)&&(lss&&pwd)
 echo $?
-(ls && pwd | wc) > hola
 echo $?
-(ls && pwd | wc) > hola
 echo $?
-(ls && pwd | wc) > hola
 echo $?
-(ls && pwd | wc) >> hola
 echo $?
-echo hey&&(ls && pwd | wc) > hola
 echo $?
 (pwd | wc) < hola
 echo $?
-(ls && pwd | wc) < hola
 echo $?
-(ls -z || pwd | wc) < hola
 echo $?
 echo hey > hola
 echo $?
@@ -820,29 +732,20 @@ echo hey > hola
 echo $?
 echo hey > hola
 echo $?
-(ls -z || pwd && ls)
 echo $?
-ls || (cat Makefile|grep srcs) && (pwd|wc)
 echo $?
-ls -z && (ls) && (pwd)
 echo $?
-(ls > Docs/hey && pwd) > hola
 echo $?
 cat hola
 echo $?
-ls > Docs/hey && pwd > hola
 echo $?
 cat hola
 echo $?
 shtest.c
 echo $?
-cd ../.. && pwd && pwd
 echo $?
-(cd ../.. && pwd) && pwd
 echo $?
-ls -z || cd ../../..&&pwd
 echo $?
-ls -z || (cd ../../..&&pwd)
 echo $?
 echo hola > bonjour
 echo $?
@@ -1098,8 +1001,6 @@ echo que tal >> bonjour
 echo $?
 e'c'""h""o hola > bonjour
 echo $?
-echo hola > bonjour\ 1
-echo $?
 ls
 echo $?
 echo hola > bonjour hey
@@ -1133,7 +1034,9 @@ echo $?
 echo hola > srcs/bonjour
 echo $?
 echo hey > srcs/hello
-echo $?
+https://www.markdownguide.org
+Traduire cette page
+The Markdown Gecho $?
 rm srcs/bonjour srcs/hello
 echo $?
 >srcs/bonjour <prout >srcs/hello 
@@ -1302,15 +1205,9 @@ echo hola <<<< bonjour
 echo $?
 echo hola <<<<< bonjour
 echo $?
-ls *
 echo $?
-ls *.*
 echo $?
-ls *.hola
 echo $?
-cat M*le
 echo $?
-cat M*ee
 echo $?
-cat Make*file
 echo $?

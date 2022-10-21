@@ -1,0 +1,2 @@
+echo $?
+echo que tal >> bonjour

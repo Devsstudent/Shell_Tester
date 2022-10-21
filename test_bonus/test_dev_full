@@ -1,0 +1,2 @@
+echo ahah > /dev/full
+echo $?

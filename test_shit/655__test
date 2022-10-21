@@ -1,2 +1,0 @@
-cat M*le
-echo $?

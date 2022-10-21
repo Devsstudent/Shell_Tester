@@ -1,0 +1,2 @@
+echo $?
+chmod 000 minishell

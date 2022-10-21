@@ -1,2 +1,0 @@
->srcs/bonjour <prout >srcs/hello
-echo $?

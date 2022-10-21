@@ -1,2 +1,0 @@
-echo 2 >>hola1 > hola2
-echo $?

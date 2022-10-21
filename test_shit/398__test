@@ -1,2 +1,0 @@
-(lss||pwd)&&(lss||pwd)
-echo $?

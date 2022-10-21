@@ -1,2 +1,0 @@
-env | echo hola
-echo $?

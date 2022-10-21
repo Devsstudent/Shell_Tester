@@ -47,7 +47,7 @@ loop_test() {
 		cp ./expected_output/expected_output ./bash_output/bash_ouput_$i
 		cat $file >> ./bash_output/bash_ouput_$i
 		cp ./minishell_output/minishell_output ./minishell_output_li/minishell_output_$i
-		cat $file >> ../minishell_output_li/minishell_output_$i
+		cat $file >> ./minishell_output_li/minishell_output_$i
 		DIFF=$(diff ./expected_output/expected_output ./minishell_output/minishell_output)
 		if [ "$DIFF" ]
 		then
@@ -57,7 +57,7 @@ loop_test() {
 			printf ": $green OK\n"
 		fi
 		printf "$reset"
-		i = $((i + 1))
+		i=$((i + 1))
 	done
 }
 

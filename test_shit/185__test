@@ -1,2 +1,0 @@
-unset HOL_A
-echo $?

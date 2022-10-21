@@ -1,0 +1,2 @@
+echo $?
+mkdir a

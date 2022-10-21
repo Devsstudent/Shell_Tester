@@ -1,0 +1,2 @@
+echo $?
+whereis ls | cat -e | cat -e > /tmp/bonjour

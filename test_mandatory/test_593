@@ -1,0 +1,2 @@
+echo $?
+cat > ls1 < ls2

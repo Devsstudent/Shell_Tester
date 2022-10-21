@@ -1,0 +1,2 @@
+echo $?
+ifconfig | grep "":"""MULTICAST>  mtu 1500

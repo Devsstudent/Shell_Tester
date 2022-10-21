@@ -1,2 +1,0 @@
-<bonjour cat | wc > bonjour
-echo $?

@@ -1,0 +1,2 @@
+ls > inoutfile | cat inoutfile > /dev/stdout | cat inoutfile
+echo $?

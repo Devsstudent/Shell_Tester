@@ -1,2 +1,0 @@
-ls | ls | echo hola | rev
-echo $?

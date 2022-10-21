@@ -1,0 +1,2 @@
+echo $?
+echo oui | cat -e
