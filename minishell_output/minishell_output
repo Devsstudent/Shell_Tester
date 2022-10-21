@@ -1,0 +1,57 @@
+==799687== 1 bytes in 1 blocks are still reachable in loss record 1 of 8
+==799687==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==799687==    by 0x109D28: new_elem (lst_utils.c:44)
+==799687==    by 0x109BAC: double_char_to_lst (copy_env.c:86)
+==799687==    by 0x10971B: main (main.c:72)
+==799687== 
+==799687== 24 bytes in 1 blocks are still reachable in loss record 2 of 8
+==799687==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==799687==    by 0x109B5C: double_char_to_lst (copy_env.c:79)
+==799687==    by 0x10971B: main (main.c:72)
+==799687== 
+==799687== 24 bytes in 1 blocks are still reachable in loss record 3 of 8
+==799687==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==799687==    by 0x109937: gc_new_node (garbage_collector.c:20)
+==799687==    by 0x1099A2: add_to_gc (garbage_collector.c:36)
+==799687==    by 0x109B9B: double_char_to_lst (copy_env.c:83)
+==799687==    by 0x10971B: main (main.c:72)
+==799687== 
+==799687== 690 bytes in 1 blocks are still reachable in loss record 4 of 8
+==799687==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==799687==    by 0x1125FE: ft_strjoin (in /mnt/nfs/homes/odessein/Project/ShellBasket/minishell)
+==799687==    by 0x109C32: loop_copy_env (lst_utils.c:23)
+==799687==    by 0x109D93: new_elem (lst_utils.c:56)
+==799687==    by 0x109BAC: double_char_to_lst (copy_env.c:86)
+==799687==    by 0x10971B: main (main.c:72)
+==799687== 
+==799687== 1,064 bytes in 1 blocks are still reachable in loss record 5 of 8
+==799687==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==799687==    by 0x112B4A: ft_count_word (in /mnt/nfs/homes/odessein/Project/ShellBasket/minishell)
+==799687==    by 0x112BB4: ft_split (in /mnt/nfs/homes/odessein/Project/ShellBasket/minishell)
+==799687==    by 0x109D5E: new_elem (lst_utils.c:50)
+==799687==    by 0x109BAC: double_char_to_lst (copy_env.c:86)
+==799687==    by 0x10971B: main (main.c:72)
+==799687== 
+==799687== 1,216 bytes in 38 blocks are still reachable in loss record 6 of 8
+==799687==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==799687==    by 0x109D0E: new_elem (lst_utils.c:41)
+==799687==    by 0x109BAC: double_char_to_lst (copy_env.c:86)
+==799687==    by 0x10971B: main (main.c:72)
+==799687== 
+==799687== 1,318 bytes in 106 blocks are still reachable in loss record 7 of 8
+==799687==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==799687==    by 0x1128F2: ft_strndup (in /mnt/nfs/homes/odessein/Project/ShellBasket/minishell)
+==799687==    by 0x112A3E: ft_less_line (in /mnt/nfs/homes/odessein/Project/ShellBasket/minishell)
+==799687==    by 0x112BD0: ft_split (in /mnt/nfs/homes/odessein/Project/ShellBasket/minishell)
+==799687==    by 0x109D5E: new_elem (lst_utils.c:50)
+==799687==    by 0x109BAC: double_char_to_lst (copy_env.c:86)
+==799687==    by 0x10971B: main (main.c:72)
+==799687== 
+==799687== 1,525 bytes in 37 blocks are still reachable in loss record 8 of 8
+==799687==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==799687==    by 0x1125FE: ft_strjoin (in /mnt/nfs/homes/odessein/Project/ShellBasket/minishell)
+==799687==    by 0x109C5C: loop_copy_env (lst_utils.c:24)
+==799687==    by 0x109D93: new_elem (lst_utils.c:56)
+==799687==    by 0x109BAC: double_char_to_lst (copy_env.c:86)
+==799687==    by 0x10971B: main (main.c:72)
+==799687== 
