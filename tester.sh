@@ -37,13 +37,11 @@ loop_test() {
 		printf "test $i: $file "
 		cat $file | valgrind --log-fd=1 -q  --suppressions=readline_ignore.txt --leak-check=full  --show-leak-kinds=all $minishell_path 2>&- > ./minishell_output/minishell_output
 		cat $file | bash  2>&- > ./expected_output/expected_output
-		echo input: >> ./test_output/test_$i
+		echo -n "cmd: " >> ./test_out/test_$i
 		cat $file >> ./test_out/test_$i
-		echo output: >> ./test_output/test_$i
+		echo "bash output:" >> ./test_output/test_$i
 		cat ./expected_output/expected_output >> ./test_output/test_$i
-		echo input: >> ./test_output/test_$i
-		cat $file >> ./test_output/test_$i
-		echo output: >> ./test_output/test_$i
+		echo "minishell output:" >> ./test_output/test_$i
 		cat ./minishell_output/minishell_output >> ./test_output/test_$i
 		DIFF=$(diff ./expected_output/expected_output ./minishell_output/minishell_output)
 		if [ "$DIFF" ]
