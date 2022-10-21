@@ -3,14 +3,15 @@ test: clean create_dir
 
 test_bonus: clean create_dir
 	(bash ./tester.sh $(path_test))
+
 create_dir:
-	mkdir -p bash_output
 	mkdir -p expected_output
-	mkdir -p minishell_output_li
 	mkdir -p minishell_output
+	mkdir -p test_output
 
 clean:
 	rm -rf bash_output
-	rm -rf minishell_output_li
 	rm -rf expected_output
-	rm -rf minishell_output
+	rm -rf test_output
+	rm -rf cat
+	rm -rf a
