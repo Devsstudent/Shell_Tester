@@ -41,13 +41,17 @@ loop_test() {
 	i=0
 	for file in $test_li
 	do
-		printf "test : $file "
+		printf "test $i: $file "
 		cat $file | valgrind --log-fd=1 -q  --suppressions=readline_ignore.txt --leak-check=full  --show-leak-kinds=all $minishell_path 2>&- > ./minishell_output/minishell_output
 		cat $file | bash  2>&- > ./expected_output/expected_output
-		cp ./expected_output/expected_output ./bash_output/bash_ouput_$i
+		echo input: >> ./bash_output/bash_ouput_$i
 		cat $file >> ./bash_output/bash_ouput_$i
-		cp ./minishell_output/minishell_output ./minishell_output_li/minishell_output_$i
+		echo output: >> ./bash_output/bash_ouput_$i
+		cat ./expected_output/expected_output >> ./bash_output/bash_ouput_$i
+		echo input: >> ./minishell_output_li/minishell_output_$i
 		cat $file >> ./minishell_output_li/minishell_output_$i
+		echo output: >> ./minishell_output_li/minishell_output_$i
+		cat ./minishell_output/minishell_output >> ./minishell_output_li/minishell_output_$i
 		DIFF=$(diff ./expected_output/expected_output ./minishell_output/minishell_output)
 		if [ "$DIFF" ]
 		then
