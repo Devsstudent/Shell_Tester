@@ -1,6 +1,8 @@
-test: create_dir
-	(bash ./tester.sh $(path_shell) $(path_test))
+test: clean create_dir
+	(bash ./tester.sh $(path_test))
 
+test_bonus: clean create_dir
+	(bash ./tester.sh $(path_test))
 create_dir:
 	mkdir -p bash_output
 	mkdir -p expected_output

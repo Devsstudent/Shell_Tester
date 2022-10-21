@@ -1,19 +1,11 @@
 #!/bin/sh
 
-if [ -z "$1" ]
-then
 	#You can setup your path here
-	minishell_path=../minishell
-	minishell_dir_path=../
-else
-	#Or directyly implement it in your Makefile with a rules including the direct path of the tester
-	#Mine : 
-	#	(cd PATH OF THIS TESTER && bash ./tester.sh $(shell pwd)/minishell)
-	minishell_path=$1
-	minishell_dir_path=${minishell_path::-9}
-fi
+minishell_path=../minishell_bonus
+minishell_dir_path=../
+#minishell_dir_path=${minishell_path::-9}
 
-if [ -z "$2" ]
+if [ -z "$1" ]
 then
 	test_dir=test_mandatory
 else
@@ -41,6 +33,7 @@ loop_test() {
 	i=0
 	for file in $test_li
 	do
+		#may put something like : command \n your_output \n bash_ouput in 1 file by test
 		printf "test $i: $file "
 		cat $file | valgrind --log-fd=1 -q  --suppressions=readline_ignore.txt --leak-check=full  --show-leak-kinds=all $minishell_path 2>&- > ./minishell_output/minishell_output
 		cat $file | bash  2>&- > ./expected_output/expected_output
@@ -56,7 +49,7 @@ loop_test() {
 		if [ "$DIFF" ]
 		then
 			printf ": $red KO $reset\n"
-			printf "diff : $DIFF\n"
+		#	printf "diff : $DIFF\n"
 		else 
 			printf ": $green OK\n"
 		fi
